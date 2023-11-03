@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar-collapse ul {
+  margin: 0 auto;
+}
+
+.navbar-collapse ul li {
+  margin: 0 15px;
+}
+
+#naslov {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 220px;
+  margin: 40px 0;
+  justify-content: space-evenly;
+}
+
+#naslov h1 {
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+}
+
+#apply-btn {
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+}
+
+#apply-btn {
+  background-color: #0360ad;
+}
+
+#security-types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 30px 0;
+}
+
+#security-types div {
+  position: relative;
+  width: 482px;
+  height: 322px;
+  display: flex;
+  justify-content: center;
+  background-color: #111;
+  border-radius: 15px;
+  border: 1px solid rgb(127, 122, 122);
+  overflow: hidden;
+}
+
+#tehnicka,
+#kiberneticka {
+  width: 480px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+#fizicka {
+  height: 260px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+#security-types div p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: #0360ad;
+  font-size: 20px;
+  bottom: 0;
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  background-color: #111;
+}
+
+#security-types div img:hover {
+  transform: scale(1.1);
+}
+
+#reklama {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 50px;
+}
+
+#reklama div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#reklama div h2 i {
+  font-size: 20px;
+}
+
+#reklama div h2 span {
+  color: #0360ad;
+}
+
+#reklama div p {
+  font-size: 18px;
+}
+
+#mozaik {
+  display: flex;
+  color: white;
+  margin: 100px 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#kompanije {
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#mozaik div {
+  width: 40%;
+}
+
+#mozaik li img {
+  width: 30px;
+}
+
+#mozaik li {
+  margin: 20px 0;
+}
+
+#mozaik-grid img {
+  width: 150px;
+  transition: transform 0.5s;
+}
+
+#mozaik-grid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  gap: 20px;
+}
+
+#mozaik-grid div {
+  background-color: #111;
+  width: 100%;
+  border: 1px solid rgb(127, 122, 122);
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#mozaik-grid img:hover {
+  transform: scale(1.1);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 300px;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  border-radius: 15px;
+  border: 1px solid rgb(127, 122, 122);
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  height: 300px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.swiper-pagination {
+  background-color: rgba(255, 255, 255, 0.197);
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
+}
