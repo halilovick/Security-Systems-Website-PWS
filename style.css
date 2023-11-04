@@ -6,7 +6,11 @@
 }
 
 body {
-  background-color: black;
+  background-color: rgb(131, 131, 131);
+}
+
+nav {
+  background-color: #111;
 }
 
 .navbar-collapse ul {
@@ -18,7 +22,7 @@ body {
 }
 
 #naslov {
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +34,11 @@ body {
 #naslov h1 {
   text-transform: uppercase;
   font-family: "Exo", sans-serif;
+  font-weight: bold;
+}
+
+#naslov p {
+  font-size: 19px;
 }
 
 #apply-btn {
@@ -58,9 +67,9 @@ body {
   height: 322px;
   display: flex;
   justify-content: center;
-  background-color: #111;
+  background-color: #464646;
   border-radius: 15px;
-  border: 1px solid rgb(127, 122, 122);
+  border: 2px solid rgb(201, 201, 201);
   overflow: hidden;
 }
 
@@ -86,6 +95,7 @@ body {
   color: #0360ad;
   font-size: 20px;
   bottom: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Exo", sans-serif;
   background-color: #111;
@@ -96,7 +106,6 @@ body {
 }
 
 #reklama {
-  color: white;
   display: flex;
   justify-content: space-evenly;
   margin: 100px 50px;
@@ -123,7 +132,7 @@ body {
 
 #mozaik {
   display: flex;
-  color: white;
+  color: black;
   margin: 100px 50px;
   align-items: center;
   justify-content: space-evenly;
@@ -161,7 +170,7 @@ body {
 #mozaik-grid div {
   background-color: #111;
   width: 100%;
-  border: 1px solid rgb(127, 122, 122);
+  border: 2px solid rgb(200, 198, 198);
   overflow: hidden;
   border-radius: 15px;
   display: flex;
@@ -186,7 +195,7 @@ body {
   align-items: center;
   margin-bottom: 32px;
   border-radius: 15px;
-  border: 1px solid rgb(127, 122, 122);
+  border: 2px solid rgb(202, 201, 201);
   overflow: hidden;
 }
 
@@ -195,10 +204,6 @@ body {
   display: block;
   object-fit: cover;
   transition: transform 0.5s;
-}
-
-.swiper-pagination {
-  background-color: rgba(255, 255, 255, 0.197);
 }
 
 .swiper-slide img:hover {
