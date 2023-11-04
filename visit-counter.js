@@ -26,39 +26,21 @@ function incrementVisitCount() {
     setCookie("visitCount", visitCount, 365); 
 }
 
-function openPopupWithVisitCount() {
-    const visitCount = getCookie("visitCount");
-
-    const popupContent = `
-        <html>
-        <head>
-            <title>Page visits</title>
-            <style>
-                body {
-                    font-family: "Exo", sans-serif;
-                    background-color: black;
-                    text-align: center;
-                    margin: 50px 0;
-                    color: white;
-                }
-            </style>
-        </head>
-        <body>
-            <h1>Broj posjeta stranice: </h1>
-            <p>${visitCount}</p>
-        </body>
-        </html>
-    `;
-
-    const popupWindow = window.open('', 'Visit Count Popup', 'width=400,height=200');
-    popupWindow.document.open();
-    popupWindow.document.write(popupContent);
-    popupWindow.document.close();
-}
-
 if (getCookie("visitCount") === "") {
     setCookie("visitCount", 1, 365);
 }
 
 incrementVisitCount();
-openPopupWithVisitCount();
+
+window.addEventListener("load", function () {
+    const visitCount = getCookie("visitCount");
+    document.getElementById("broj-posjeta").textContent = visitCount;
+    setTimeout(function () {
+        document.querySelector(".popup").style.display = "block";
+    }, 1000); //sekundu nakon ucitavanja 
+
+    setTimeout(function () {
+        document.querySelector(".popup").style.display = "none";
+    }, 5000); // nakon 5 sekundi se zatvara
+});
+

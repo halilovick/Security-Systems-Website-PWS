@@ -209,3 +209,25 @@ nav {
 .swiper-slide img:hover {
   transform: scale(1.1);
 }
+
+.popup {
+  background-color: #0360ad;
+  color: antiquewhite;
+  width: 200px;
+  padding: 0;
+  position: absolute;
+  left: 170px; 
+  top: 120px; 
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  display: none;
+  text-align: center;
+}
+
+.popup p{
+  margin-top: 10px;
+  font-size: 18px;
+  color: antiquewhite;
+  text-align: center;
+}
