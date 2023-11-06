@@ -1,3 +1,27 @@
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    530: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    800: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+  },
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 function setCookie(name, value, days) {
   const date = new Date();
   date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);

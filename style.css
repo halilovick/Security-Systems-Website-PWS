@@ -91,7 +91,7 @@ nav {
 
 #security-types div {
   position: relative;
-  width: 482px;
+  width: 472px;
   height: 322px;
   display: flex;
   justify-content: center;
@@ -99,11 +99,12 @@ nav {
   border-radius: 15px;
   border: 2px solid rgb(255, 255, 255);
   overflow: hidden;
+  margin: 20px 5px;
 }
 
 #tehnicka,
 #kiberneticka {
-  width: 480px;
+  width: 470px;
   height: 320px;
   object-fit: cover;
   border-radius: 15px;
@@ -135,12 +136,14 @@ nav {
 
 #reklama {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 80px 50px;
 }
 
 #reklama div {
   width: 40%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -210,7 +213,7 @@ nav {
 }
 
 .swiper {
-  width: 95%;
+  max-width: 95%;
   height: 100%;
 }
 
@@ -258,4 +261,86 @@ nav {
   font-size: 18px;
   color: antiquewhite;
   text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+  #mozaik {
+    flex-direction: column;
+    margin: 100px 20px;
+  }
+
+  #mozaik div {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  #mozaik-grid {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #naslov div {
+    padding: 40px 40px;
+  }
+  #reklama div {
+    width: 70%;
+  }
+  #reklama img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #naslov h1 {
+    font-size: 25px;
+  }
+  #reklama div {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #naslov div {
+    padding: 40px 40px;
+  }
+
+  #naslov h1 {
+    font-size: 22px;
+  }
+
+  #naslov p {
+    font-size: 18px;
+  }
+
+  #mozaik-grid img {
+    width: 100px;
+  }
+
+  #mozaik-grid {
+    grid-template-columns: 100px 100px 100px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #mozaik-grid img {
+    width: 80px;
+  }
+
+  #mozaik-grid {
+    grid-template-columns: 80px 80px 80px;
+  }
+
+  .swiper-slide {
+    max-width: 90%;
+    height: 200px;
+    margin: 0;
+  }
+
+  .swiper-slide img {
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
 }
