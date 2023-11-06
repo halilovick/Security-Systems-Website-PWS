@@ -1,322 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Security</title>
+  </head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Security</title>
-</head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg border-bottom border-body"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a style="margin-left: 20px" class="navbar-brand" href="#">Security</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Početna</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Sigurnost
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fizička</a></li>
+                <li><a class="dropdown-item" href="#">Tehnička</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Kibernetička</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Proizvodi
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kamere</a></li>
+                <li><a class="dropdown-item" href="#">Aparati</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Aplikacija</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kompanija
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">O nama</a></li>
+                <li><a class="dropdown-item" href="#">Lokacije</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Događaji</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="naslov">
+      <div>
+        <h1>Pouzdano Partnerstvo za Sigurnost</h1>
+        <p>
+          Nudimo sigurnost i udubnost u svakoj situaciji, omogućavajući vam da
+          se osjećate bezbrižno i sa potpunim povjerenjem u naše sveobuhvatne
+          mjere sigurnosti.
+        </p>
+        <a href="formular.pdf" download>
+          <button id="apply-btn">Uspostavi saradnju sada</button>
+        </a>
+      </div>
+    </div>
 
-<body>
-  <nav class="navbar navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a style="margin-left: 20px" class="navbar-brand" href="#">Security</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <div id="security-types">
+      <div>
+        <img id="tehnicka" src="img/tehnicka.jpg" alt="security" />
+        <p>Tehnička sigurnost</p>
+      </div>
+      <div>
+        <img id="fizicka" src="img/fizicka.png" alt="security" />
+        <p>Fizička sigurnost</p>
+      </div>
+      <div>
+        <img id="kiberneticka" src="img/kiberneticka.jpg" alt="security" />
+        <p>Kibernetička sigurnost</p>
+      </div>
+    </div>
+    <div id="reklama">
+      <img src="img/reklama.png" alt="" />
+      <div>
+        <h2>
+          <strong>PWS SECURITY</strong>
+          <br />
+          <span>MOBILNA APLIKACIJA</span> <br />
+          <i>Sigurnost na vašem pragu u svakom trenutku </i>
+        </h2>
+        <p>
+          Naša mobilna aplikacija pruža potpunu kontrolu nad sigurnošću vašeg
+          doma. Sa intuitivnim sučeljem i naprednim funkcijama, možete
+          nadgledati svoj dom, zaključavati i otključavati vrata, upravljati
+          alarmima i kamerama, te osigurati svoj dom gdje i bilo kada. Bez
+          obzira gdje se nalazite uz našu aplikaciju, vaša kuća je uvijek pod
+          vašom zaštitom.
+        </p>
+      </div>
+    </div>
+    <h1 style="margin: 20px 50px; font-weight: bold">Naši proizvodi:</h1>
+    <div class="swiper mySwiper" style="margin-left: 50px">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="img/products/product1.png" alt="product1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/products/product2.png" alt="product1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/products/product3.png" alt="product1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/products/product4.png" alt="product1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/products/product5.png" alt="product1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/products/product6.png" alt="product1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/products/product7.png" alt="product1" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="mozaik">
+      <div>
+        <p>
+          Saradnja s najboljima! Ponosno sarađujemo s nekim od vodećih firmi i
+          kompanija u industriji. Naša posvećenost sigurnosti i kvalitetu je
+          prepoznata od strane ovih partnera, i zajedno gradimo pouzdan odnos.
+        </p>
+        <ul>
+          <li>
+            <img src="img/shaking-hands.png" alt="shaking-hands-icon" />
+            Partneri za Sigurnost: Zahvaljujemo se svim našim partnerima na
+            povjerenju. Njihova podrška i saradnja su ključni faktori našeg
+            uspjeha.
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
+          <li>
+            <img src="img/world.png" alt="world-icon" />
+            Globalna Mreža: Naša saradnja seže širom sveta, što nam omogućava da
+            pružimo sveobuhvatnu sigurnost gde god da se nalazite.
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
+          <li>
+            <img src="img/trophy.png" alt="trophy-icon" />
+            Zajedno ka Uspjehu: Radimo zajedno kako bismo ostvarili vrhunske
+            rezultate i obezbijedili vašu sigurnost i zadovoljstvo.
           </li>
         </ul>
       </div>
-    </div>
-  </nav>
-  <div id="naslov">
-    <h1>Pouzdano Partnerstvo za Sigurnost</h1>
-    <p>
-      Nudimo sigurnost i udubnost u svakoj situaciji, omogućavajući vam da se
-      osjećate bezbrižno i sa potpunim povjerenjem u naše sveobuhvatne mjere
-      sigurnosti.
-    </p>
-    <a href="formular.pdf" download>
-      <button id="apply-btn">Uspostavi saradnju sada</button>
-    </a>
-  </div>
 
-  <div id="security-types">
-    <div>
-      <img id="tehnicka" src="img/tehnicka.jpg" alt="security">
-      <p>Tehnička sigurnost</p>
-    </div>
-    <div>
-      <img id="fizicka" src="img/fizicka.png" alt="security">
-      <p>Fizička sigurnost</p>
-    </div>
-    <div>
-      <img id="kiberneticka" src="img/kiberneticka.jpg" alt="security">
-      <p>Kibernetička sigurnost</p>
-    </div>
-  </div>
-  <div id="reklama">
-    <img src="img/reklama.png" alt="">
-    <div>
-      <h2>
-        <strong>PWS SECURITY</strong>
-        <br>
-        <span>MOBILNA APLIKACIJA</span> <br>
-        <i>Sigurnost na vašem pragu u svakom trenutku </i>
-      </h2>
-      <p>
-        Naša mobilna aplikacija pruža potpunu kontrolu nad sigurnošću vašeg
-        doma. Sa intuitivnim sučeljem i naprednim funkcijama, možete
-        nadgledati svoj dom, zaključavati i otključavati vrata, upravljati
-        alarmima i kamerama, te osigurati svoj dom gdje i bilo kada. Bez
-        obzira gdje se nalazite uz našu aplikaciju, vaša kuća je uvijek pod
-        vašom zaštitom.
-      </p>
-    </div>
-  </div>
-  <h1 style="color: white; margin: 20px">Naši proizvodi:</h1>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="img/products/product1.png" alt="product1">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/products/product2.png" alt="product1">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/products/product3.png" alt="product1">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/products/product4.png" alt="product1">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/products/product5.png" alt="product1">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/products/product6.png" alt="product1">
-      </div>
-      <div class="swiper-slide">
-        <img src="img/products/product7.png" alt="product1">
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-
-  <div id="mozaik">
-    <div>
-      <p>
-        Saradnja s najboljima! Ponosno sarađujemo s nekim od vodećih firmi i
-        kompanija u industriji. Naša posvećenost sigurnosti i kvalitetu je
-        prepoznata od strane ovih partnera, i zajedno gradimo pouzdan odnos.
-      </p>
-      <ul>
-        <li>
-          <img src="img/shaking-hands.png" alt="shaking-hands-icon">
-          Partneri za Sigurnost: Zahvaljujemo se svim našim partnerima na
-          povjerenju. Njihova podrška i saradnja su ključni faktori našeg
-          uspjeha.
-        </li>
-        <li>
-          <img src="img/world.png" alt="world-icon">
-          Globalna Mreža: Naša saradnja seže širom sveta, što nam omogućava da
-          pružimo sveobuhvatnu sigurnost gde god da se nalazite.
-        </li>
-        <li>
-          <img src="img/trophy.png" alt="trophy-icon">
-          Zajedno ka Uspjehu: Radimo zajedno kako bismo ostvarili vrhunske
-          rezultate i obezbijedili vašu sigurnost i zadovoljstvo.
-        </li>
-      </ul>
-    </div>
-
-    <div id="mozaik-grid">
-      <div>
-        <a href= "https://www.hoteleuropegroup.ba/ba/europe"> <img src="img/mozaik/mozaik1.jpg" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://www.gazprom-petrol.ba/"> <img src="img/mozaik/mozaik2.png" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://violeta.com/en/"> <img src="img/mozaik/mozaik3.png" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://atstore.ba/"> <img src="img/mozaik/mozaik4.png" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://inoma.ba/"> <img src="img/mozaik/mozaik5.png" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://jysk.ba/"> <img src="img/mozaik/mozaik6.jpg" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://www.klix.ba/"> <img src="img/mozaik/mozaik7.png" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://www.bhtelecom.ba/"> <img src="img/mozaik/mozaik8.png" alt="mozaik"></a>
-      </div>
-      <div>
-        <a href = "https://www.hotel-neum.com/"> <img src="img/mozaik/mozaik9.png" alt="mozaik"></a>
-      </div>
-    </div>
-  </div>
-
-  <footer class="text-center text-lg-start text-white" style="background-color: #111">
-    <section class="d-flex justify-content-between p-4" style="background-color: #2a2a2a">
-      <div class="me-5">
-        <span>Povežite se s nama na društvenim mrežama:</span>
-      </div>
-      <div>
-        <a href="https://www.facebook.com/" class="text-white me-4">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com/?lang=en" class="text-white me-4">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://halilovick.github.io/?fbclid=IwAR2ALeOcw-2kRww1dUcyozotEDn3D7_3ODRrLYovT8X6YlCXyPl-Cxt622M" class="text-white me-4">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="https://www.instagram.com/" class="text-white me-4">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/" class="text-white me-4">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/halilovick/halilovick.github.io" class="text-white me-4">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </section>
-
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <div class="row mt-3">
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold">PWS Security</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
-            <p>
-              Naša firma za sigurnost postavlja standarde u industriji
-              sigurnosti, pružajući sveobuhvatna rješenja koja štite naše
-              klijente od svih vrsta rizika, od fizičkih prijetnji do cyber
-              napada.
-            </p>
-          </div>
-
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <h6 class="text-uppercase fw-bold">Useful links</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
-            <p>
-              <a href="#!" class="text-white">Your Account</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Become an Affiliate</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Shipping Rates</a>
-            </p>
-            <p>
-              <a href="#!" class="text-white">Help</a>
-            </p>
-          </div>
-
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <h6 class="text-uppercase fw-bold">Contact</h6>
-            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px">
-            <p><i class="fas fa-home mr-3"></i> Zmaja od Bosne bb, Sarajevo, 71000</p>
-            <p>
-              <i class="fas fa-envelope mr-3"></i>
-              <a href="mailto:contact@pwssecurity.com?subject=&body=">
-                info@example.com
-              </a>
-            </p>
-            <p><i class="fas fa-phone mr-3"></i> + 38711111111</p>
-          </div>
+      <div id="mozaik-grid">
+        <div>
+          <a href="https://www.hoteleuropegroup.ba/ba/europe">
+            <img src="img/mozaik/mozaik1.jpg" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.gazprom-petrol.ba/">
+            <img src="img/mozaik/mozaik2.png" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://violeta.com/en/">
+            <img src="img/mozaik/mozaik3.png" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://atstore.ba/">
+            <img src="img/mozaik/mozaik4.png" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://inoma.ba/">
+            <img src="img/mozaik/mozaik5.png" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://jysk.ba/">
+            <img src="img/mozaik/mozaik6.jpg" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.klix.ba/">
+            <img src="img/mozaik/mozaik7.png" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.bhtelecom.ba/">
+            <img src="img/mozaik/mozaik8.png" alt="mozaik"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.hotel-neum.com/">
+            <img src="img/mozaik/mozaik9.png" alt="mozaik"
+          /></a>
         </div>
       </div>
-    </section>
-
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2023 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">pws-security.com</a>
     </div>
-  </footer>
 
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #111"
+    >
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: #2a2a2a"
+      >
+        <div class="me-5">
+          <span>Povežite se s nama na društvenim mrežama:</span>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/?lang=en" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://halilovick.github.io/?fbclid=IwAR2ALeOcw-2kRww1dUcyozotEDn3D7_3ODRrLYovT8X6YlCXyPl-Cxt622M"
+            class="text-white me-4"
+          >
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="https://www.instagram.com/" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/halilovick/halilovick.github.io"
+            class="text-white me-4"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
 
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">PWS Security</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                Naša firma za sigurnost postavlja standarde u industriji
+                sigurnosti, pružajući sveobuhvatna rješenja koja štite naše
+                klijente od svih vrsta rizika, od fizičkih prijetnji do cyber
+                napada.
+              </p>
+            </div>
 
-  <div class="popup">
-    <p>Broj posjeta stranice</p>
-    <h3 id="broj-posjeta"></h3>
-    
-    </p>
-</div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Useful links</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="#!" class="text-white">Your Account</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Become an Affiliate</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Shipping Rates</a>
+              </p>
+              <p>
+                <a href="#!" class="text-white">Help</a>
+              </p>
+            </div>
 
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <i class="fas fa-home mr-3"></i> Zmaja od Bosne bb, Sarajevo,
+                71000
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i>
+                <a href="mailto:contact@pwssecurity.com?subject=&body=">
+                  info@example.com
+                </a>
+              </p>
+              <p><i class="fas fa-phone mr-3"></i> + 38711111111</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+          >pws-security.com</a
+        >
+      </div>
+    </footer>
 
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-  </script>
+    <div class="popup">
+      <p>Broj posjeta stranice</p>
+      <h3 id="broj-posjeta"></h3>
+    </div>
 
-  <script src="visit-counter.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script src="visit-counter.js"></script>
+  </body>
 </html>

@@ -2,15 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 body {
-  background-color: rgb(131, 131, 131);
+  background-color: #abacad;
 }
 
 nav {
-  background-color: #111;
+  background-color: #111111d3;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 }
 
 .navbar-collapse ul {
@@ -23,22 +30,37 @@ nav {
 
 #naslov {
   color: black;
+  width: 100%;
+  height: 75vh;
+  padding-top: 50px;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.152),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid white;
+}
+
+#naslov div {
+  height: 100%;
+  width: 60%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 220px;
-  margin: 40px 0;
+  align-items: start;
   justify-content: space-evenly;
+  padding: 80px 120px;
 }
 
 #naslov h1 {
   text-transform: uppercase;
-  font-family: "Exo", sans-serif;
   font-weight: bold;
 }
 
 #naslov p {
-  font-size: 19px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 #apply-btn {
@@ -51,6 +73,12 @@ nav {
 }
 
 #apply-btn {
+  background-color: #111;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+#apply-btn:hover {
   background-color: #0360ad;
 }
 
@@ -67,9 +95,9 @@ nav {
   height: 322px;
   display: flex;
   justify-content: center;
-  background-color: #464646;
+  background-color: #111;
   border-radius: 15px;
-  border: 2px solid rgb(201, 201, 201);
+  border: 2px solid rgb(255, 255, 255);
   overflow: hidden;
 }
 
@@ -92,7 +120,7 @@ nav {
   width: 100%;
   text-align: center;
   position: absolute;
-  color: #0360ad;
+  color: white;
   font-size: 20px;
   bottom: 0;
   margin-bottom: 0;
@@ -108,7 +136,7 @@ nav {
 #reklama {
   display: flex;
   justify-content: space-evenly;
-  margin: 100px 50px;
+  margin: 80px 50px;
 }
 
 #reklama div {
@@ -182,25 +210,25 @@ nav {
 }
 
 .swiper {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 
 .swiper-slide {
-  width: 300px;
-  height: 300px;
+  width: 310px;
+  height: 330px;
   background: #111;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
   border-radius: 15px;
-  border: 2px solid rgb(202, 201, 201);
+  border: 2px solid white;
   overflow: hidden;
 }
 
 .swiper-slide img {
-  height: 300px;
+  height: 330px;
   display: block;
   object-fit: cover;
   transition: transform 0.5s;
@@ -216,8 +244,8 @@ nav {
   width: 200px;
   padding: 0;
   position: absolute;
-  left: 170px; 
-  top: 120px; 
+  left: 170px;
+  top: 120px;
   transform: translate(-50%, -50%);
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
@@ -225,7 +253,7 @@ nav {
   text-align: center;
 }
 
-.popup p{
+.popup p {
   margin-top: 10px;
   font-size: 18px;
   color: antiquewhite;
